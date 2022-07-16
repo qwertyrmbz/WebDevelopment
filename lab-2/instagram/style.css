@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top, .signup {
+    background-color: white;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    padding: 40px 40px 20px 40px;
+    width: 350px;
+    margin-left: 25px;
+}
+
+.logo img {
+    display: block;
+    margin: 0px auto 35px;
+}
+
+.input-field {
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(178, 178, 178);
+    font-size: 12px;
+    border-radius: 3px;
+    color: rgb(38, 38, 38);
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    margin: 10px 0px;
+    background-color: rgb(27, 137, 255);
+    border: 1px solid rgb(27, 137, 255);
+    border-radius: 4px;
+    width: 100%;
+    padding: 7px;
+    color: white;
+}
+
+.or {
+    display: flex;
+    height: 15px;
+    margin: 15px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(141, 141, 141);
+    font-size: 12px;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(239, 239, 239);
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb p {
+    color: rgb(56, 81, 133);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.forgot {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(0, 53, 105);
+}
+
+.signup {
+    margin: 10px 25px 20px;
+    padding: 25px;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(38, 38, 38);
+}
+
+.signup a {
+    color: rgb(56, 151, 240);
+}
+
+.apps p {
+    margin-left: 125px;
+    color: rgb(38, 38, 38);
+    margin-bottom: 20px;
+}
+
+.apps a img {
+    width: 135px;
+    height: 40px;
+    
+}
+
+footer p {
+    word-spacing: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+
+footer span {
+    word-spacing: normal;
+}
+
+.end {
+    margin-bottom: 50px;
+}
+

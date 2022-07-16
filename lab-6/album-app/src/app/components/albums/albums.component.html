@@ -1,0 +1,16 @@
+<div class="albums-component">
+    <h2>Albums List</h2>
+    <div class="adding-panel">
+        <input type="text" placeholder="Enter the title of the new album" [(ngModel)]="newAlbum">
+        <button (click)="addAlbum()">Add Post</button>
+    </div>
+    <ul *ngIf="loaded" class="albums-list">
+        <li *ngFor="let album of albums" class="album-entry">
+            <span class="album-id">{{album.id}}</span>
+          <a [routerLink]="['/albums', album.id]" class="detail-link">{{album.title}}</a>
+          <button (click)="deleteAlbum(album.id)" class="delete-album">x</button>
+        </li>
+      </ul>
+
+    <p *ngIf="!loaded">Loading...</p>
+</div>

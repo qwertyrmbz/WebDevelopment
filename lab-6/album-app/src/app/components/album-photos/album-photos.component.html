@@ -1,0 +1,18 @@
+<div class="content">
+	<h2>Photos for album #{{album.id}}</h2>
+	<div *ngIf="loaded" class="album-photos">
+	  
+
+	  <ul *ngIf="photos.length" class="photos-list">
+		<li *ngFor="let photo of photos" class="photo-entry">
+			<div class="id-title">
+		  <span id="id">{{photo.id}})</span>
+		  <span>{{photo.title}}</span>
+		</div>
+		  <img src="{{photo.thumbnailUrl}}" width="20px">
+		</li>
+	  </ul>
+	</div>
+	<button (click)="goBack()" class="back-button">Go Back</button>
+	<p *ngIf="!loaded">Loading album...</p>
+</div>
